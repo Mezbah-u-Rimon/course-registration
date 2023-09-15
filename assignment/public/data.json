@@ -25,8 +25,8 @@
     },
     {
         "id": "4",
-        "img": "https://i.ibb.co/6NYngk8/Rectangle-3.png",
-        "name": "Basic Data Structures",
+        "img": "https://i.ibb.co/vLNnT1h/Rectangle-2-6.png",
+        "name": "Cybersecurity Fundamentals",
         "credit": 5,
         "price": 35000,
         "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
@@ -49,8 +49,8 @@
     },
     {
         "id": "7",
-        "img": "https://i.ibb.co/vLNnT1h/Rectangle-2-6.png",
-        "name": "Cybersecurity Fundamentals",
+        "img": "https://i.ibb.co/6NYngk8/Rectangle-3.png",
+        "name": "Basic Data Structures",
         "credit": 5,
         "price": 35000,
         "details": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
