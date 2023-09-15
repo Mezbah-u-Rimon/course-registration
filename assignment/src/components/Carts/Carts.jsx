@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import Cart from '../Cart/Cart';
 
-const Carts = ({ cards }) => {
+const Carts = ({ cards, totalCost, totalCredit }) => {
     return (
         <div className="w-[312px] px-4">
             <div className='bg-white p-6 rounded-lg space-y-6'>
@@ -13,8 +13,13 @@ const Carts = ({ cards }) => {
                     cards.map(cart => <Cart
                         cart={cart}
                         key={cart.id}
+                        totalCost={totalCost}
                     > </Cart>)
                 }
+                <hr />
+                <h2 className='font-semibold my-4'>Total Credit Hour : {totalCredit} </h2>
+                <hr />
+                <h2 className='font-semibold my-4'>Total Price : {totalCost} USD</h2>
             </div>
 
         </div>
@@ -23,5 +28,7 @@ const Carts = ({ cards }) => {
 
 Carts.propTypes = {
     cards: PropTypes.array.isRequired,
+    totalCredit: PropTypes.number.isRequired,
+    totalCost: PropTypes.number.isRequired,
 }
 export default Carts;
