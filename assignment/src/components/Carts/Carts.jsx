@@ -10,7 +10,8 @@ const Carts = ({ cards, totalCost, totalCredit, totalHourRemaining }) => {
                 <hr />
                 <h2 className='text-xl font-bold'>Course Name</h2>
                 {
-                    cards.map(cart => <Cart
+                    cards.map((cart, idx) => <Cart
+                        idx={idx}
                         cart={cart}
                         key={cart.id}
                         totalCost={totalCost}

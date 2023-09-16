@@ -14,10 +14,10 @@ function App() {
     const isExist = cards.find(item => item.id === card.id);
     let cost = card.price;
     let totalCreditHour = card.credit;
-    let totalRemaining = 20;
+    let totalRemaining = 20 - card.credit;
 
     if (isExist) {
-      toast.success('This course already booked', {
+      toast.success('You have already purchased this course', {
         position: "top-center",
         autoClose: 5000,
         hideProgressBar: false,
